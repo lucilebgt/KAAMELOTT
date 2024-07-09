@@ -1,0 +1,65 @@
+// ------------------------------------------------
+// IMPORTS
+@use 'reset';
+
+// ------------------------------------------------
+// GENERIC VALUES
+
+// Colors
+$color1: #B4D7E7;
+$color2: #AEC8CA;
+$background :#81c4c9;
+
+// Tones
+$white: #FFFFFF;
+$grey: #444444;
+
+// Modificators
+$color2-hover: darken($color2, 10%);
+
+
+// ------------------------------------------------
+// CONTAINER
+.widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 75px;
+  background: linear-gradient(to bottom right, $background, $white);
+}
+
+.cite{
+  text-align: right;
+  font-style: italic;
+}
+
+.widget-content {
+  min-height: 100px;
+  color: $grey;
+  font-size: 24px;
+}
+
+// ------------------------------------------------
+// BUTTON
+.button {
+  background-color: $color2;
+  border: none;
+  color: $white;
+  font-size: 24px;
+  margin: 50px 0;
+  padding: 20px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: $color2-hover;
+}
+
+// ------------------------------------------------
+// ASSETS
+.logo {
+  width: 25%;
+}
